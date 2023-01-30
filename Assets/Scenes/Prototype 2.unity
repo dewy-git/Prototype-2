@@ -435,7 +435,7 @@ Camera:
   near clip plane: 0.3
   far clip plane: 1000
   field of view: 45
-  orthographic: 1
+  orthographic: 0
   orthographic size: 10
   m_Depth: -1
   m_CullingMask:
@@ -460,7 +460,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 534669902}
   m_LocalRotation: {x: 0.7071068, y: 0, z: 0, w: 0.7071068}
-  m_LocalPosition: {x: 0, y: 25, z: -1}
+  m_LocalPosition: {x: 0, y: 20, z: -3}
   m_LocalScale: {x: 1, y: 20, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -497,9 +497,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   animalPrefabs:
-  - {fileID: 127534, guid: 3fe800c166ae0d04881a20247bde736d, type: 3}
-  - {fileID: 120214, guid: 9bf484c5ec3d3bf43b2034c829f1abbe, type: 3}
-  - {fileID: 112640, guid: c7ca0992ba00761469f731111e56b107, type: 3}
+  - {fileID: 6187778635099678807, guid: 3cbb8e1e7a3ee40d78ab28253f690efe, type: 3}
+  - {fileID: 3157238938859249344, guid: 352a39705d0444fb6bbdab79ac0ac10f, type: 3}
+  - {fileID: 1824540150240484184, guid: 2bf2c5281fac0449ea45ba5f9cc7cd30, type: 3}
 --- !u!4 &708535126
 Transform:
   m_ObjectHideFlags: 0
@@ -508,7 +508,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 708535124}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -20.436165, y: 23.883072, z: -11.090961}
+  m_LocalPosition: {x: 0, y: 1, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -570,29 +570,12 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 721637448, guid: f3f69bcf5a1514c458ed5c9b96f28e34, type: 3}
+      propertyPath: xRange
+      value: 11
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f3f69bcf5a1514c458ed5c9b96f28e34, type: 3}
---- !u!1 &721637447 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 100000, guid: f3f69bcf5a1514c458ed5c9b96f28e34, type: 3}
-  m_PrefabInstance: {fileID: 721637446}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &721637448
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 721637447}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 97481c511a3e249b5ac15be06eff8241, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  horizontalInput: 0
-  speed: 15
-  xRange: 10
-  projectilePrefab: {fileID: 6076832230794236429, guid: 6a621f6e9e9f54229ac4cd6abc3e6c9c, type: 3}
 --- !u!1 &992285705
 GameObject:
   m_ObjectHideFlags: 0
@@ -765,10 +748,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: Animal_Chick
       objectReference: {fileID: 0}
-    - target: {fileID: 1824540150335110428, guid: 2bf2c5281fac0449ea45ba5f9cc7cd30, type: 3}
-      propertyPath: speed
-      value: 3
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2bf2c5281fac0449ea45ba5f9cc7cd30, type: 3}
 --- !u!1001 &3157238939144495724
@@ -826,10 +805,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: Animal_Chicken_White
       objectReference: {fileID: 0}
-    - target: {fileID: 3157238939663375111, guid: 352a39705d0444fb6bbdab79ac0ac10f, type: 3}
-      propertyPath: speed
-      value: 6
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 352a39705d0444fb6bbdab79ac0ac10f, type: 3}
 --- !u!1001 &6076832231603629810
@@ -853,7 +828,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6076832230794399277, guid: 6a621f6e9e9f54229ac4cd6abc3e6c9c, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0
+      value: 0.037
       objectReference: {fileID: 0}
     - target: {fileID: 6076832230794399277, guid: 6a621f6e9e9f54229ac4cd6abc3e6c9c, type: 3}
       propertyPath: m_LocalPosition.z
@@ -896,10 +871,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 6187778634017694956, guid: 3cbb8e1e7a3ee40d78ab28253f690efe, type: 3}
-      propertyPath: speed
-      value: 8
-      objectReference: {fileID: 0}
     - target: {fileID: 6187778635099334887, guid: 3cbb8e1e7a3ee40d78ab28253f690efe, type: 3}
       propertyPath: m_RootOrder
       value: 2
